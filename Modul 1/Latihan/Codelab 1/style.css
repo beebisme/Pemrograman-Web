@@ -1,0 +1,25 @@
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+  width: 250px;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.button-submit {
+  margin-left: 120px;
+}

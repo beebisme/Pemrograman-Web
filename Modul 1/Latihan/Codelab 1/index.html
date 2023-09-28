@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Codelab 1</title>
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+      </div>
+
+      <div class="form-group">
+        <label for="nim">Nim:</label>
+        <input type="number" id="nim" name="nim" required />
+      </div>
+
+      <div class="form-group">
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required />
+      </div>
+
+      <div class="form-group">
+        <label for="alamat">Alamat:</label>
+        <textarea
+          id="alamat"
+          name="alamat"
+          cols="21"
+          rows="5"
+          required
+        ></textarea>
+      </div>
+
+      <input class="button-submit" type="submit" value="Simpan" />
+    </form>
+  </body>
+</html>

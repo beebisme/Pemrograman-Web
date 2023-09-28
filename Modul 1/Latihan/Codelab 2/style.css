@@ -1,0 +1,24 @@
+table {
+  width: 50%;
+  background-color: gold; /* Background berwarna emas */
+  border: 1px solid black;
+}
+
+tabel {
+  border: black;
+}
+
+th,
+td {
+  border: 1px solid black; /* Border 1px solid */
+  padding: 5px; /* Padding 5px */
+  text-align: center; /* Teks berada di tengah */
+  background-color: gold; /* Background sel berwarna emas */
+  color: black; /* Teks sel berwarna hitam */
+  font-weight: bold; /* Membuat teks menjadi bold */
+}
+
+th {
+  background-color: gold; /* Background header berwarna emas */
+  color: black; /* Teks header berwarna hitam */
+}
