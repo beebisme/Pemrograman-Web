@@ -44,3 +44,18 @@ nav {
 .text-grey {
   color: #a4a4a4;
 }
+
+.logo-facebook {
+  margin-right: 20px;
+  height: 20px;
+}
+
+.logo-twitter {
+  margin-right: 10px;
+  height: 16px;
+}
+
+.logo-instagram {
+  margin-right: 10px;
+  height: 20px;
+}

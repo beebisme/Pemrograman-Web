@@ -1,0 +1,30 @@
+.aktivitas {
+  width: 600px;
+}
+
+#daftarTugas {
+  list-style: none;
+}
+
+.editBtn {
+  background-color: #158426;
+  color: white;
+  border: none;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.button {
+  background-color: #c5211c;
+  color: white;
+  border: none;
+  padding-left: 12px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-body">
+        <div class="calc-screen">
+          <div class="calc-typed">
+            <p id="display"></p>
+          </div>
+        </div>
+        <div class="button-row">
+          <div class="button c" onclick="erase()">C</div>
+          <div class="button c" onclick="clearDisplay()">CE</div>
+          <div class="button l" onclick="appendToDisplay('%')">%</div>
+          <div class="button l" onclick="appendToDisplay('/')">/</div>
+        </div>
+        <div class="button-row">
+          <div class="button" onclick="appendToDisplay('7')">7</div>
+          <div class="button" onclick="appendToDisplay('8')">8</div>
+          <div class="button" onclick="appendToDisplay('9')">9</div>
+          <div class="button l" onclick="appendToDisplay('x')">x</div>
+        </div>
+        <div class="button-row">
+          <div class="button" onclick="appendToDisplay('4')">4</div>
+          <div class="button" onclick="appendToDisplay('5')">5</div>
+          <div class="button" onclick="appendToDisplay('6')">6</div>
+          <div class="button l" onclick="appendToDisplay('-')">−</div>
+        </div>
+        <div class="button-row">
+          <div class="button" onclick="appendToDisplay('1')">1</div>
+          <div class="button" onclick="appendToDisplay('2')">2</div>
+          <div class="button" onclick="appendToDisplay('3')">3</div>
+          <div class="button l" onclick="appendToDisplay('+')">+</div>
+        </div>
+        <div class="button-row">
+          <div class="button" onclick="appendToDisplay('.')">.</div>
+          <div class="button" onclick="appendToDisplay('0')">0</div>
+          <div class="button" onclick="appendToDisplay('00')">00</div>
+          <div class="button l" onclick="calculateResult()">=</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function appendToDisplay(value) {
+        document.getElementById("display").innerText += value;
+      }
+
+      function clearDisplay() {
+        document.getElementById("display").innerText = "";
+      }
+
+      function erase() {
+        var res = document.getElementById("display").innerText;
+        var newRes = res.slice(0, -1);
+        document.getElementById("display").innerText = newRes;
+      }
+
+      function calculateResult() {
+        try {
+          var value = document.getElementById("display").innerText;
+          var res = value.replace(/x/g, "*");
+          var result = eval(res);
+          document.getElementById("display").innerText = result;
+        } catch (error) {
+          document.getElementById("display").innerText = "Error";
+        }
+      }
+    </script>
+  </body>
+</html>
